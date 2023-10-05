@@ -106,21 +106,23 @@ tr:nth-child(even) {
 
 
 
-/* Estilos para dispositivos móviles (ancho máximo de 767px) */
-@media screen and (max-width: 767px) {
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
   body {
-    font-size: 16px; /* Ajuste de tamaño de fuente para dispositivos móviles */
+    align-items: flex-start;
   }
+
   .container {
-    padding: 10px; /* Ajuste de espaciado para dispositivos móviles */
+    max-width: 100%;
+    margin: 15px;
+    padding: 15px;
   }
-  
+
+  h1 {
+    font-size: 28px;
+  }
+
+  label {
+    margin-bottom: 10px;
+  }
 }
-
-/* Estilos para tabletas (ancho entre 768px y 991px) */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /* Estilos específicos para tabletas */
-}
-
-
-
