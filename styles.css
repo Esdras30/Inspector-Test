@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Montserrat:wght@400;500&family=Oswald:wght@400;500;600;700&family=Roboto:wght@500&display=swap');
+
+/* Estilos para el contenedor principal */
+body{
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6f0288;
+
+}
+.container {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 20px 30px 35px 30px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para el título */
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #5c0ed2;
+}
+
+/* Estilos para el formulario */
+label {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #4f4e4e;
+}
+
+.container input[type="text"] {
+  width: 18rem;
+  max-width: 700px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  padding: 8px 18px;
+  background-color: #5c0ed2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  transition: all .2s;
+}
+
+button:hover {
+  background-color: #8802a5;
+
+}
+button:active {
+  transform: scale(.98);
+
+}
+
+/* Estilos para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+
+  
+}
+th:first-child{
+  padding: 10px;
+}
+
+.first-row:first-child {
+  background-color: #8802a5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+/* Estilos para las filas impares de la tabla */
+tr:nth-child(even) {
+  background-color: #8802a5;
+  color: white;
+}
+
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  /* Estilos para el contenedor principal en dispositivos móviles */
+  body {
+    align-items: flex-start; /* Cambia la alineación vertical a flex-start */
+  }
+
+  .container {
+    max-width: 100%; /* Ancho máximo del contenedor en dispositivos móviles */
+    margin: 15px; /* Margen reducido en dispositivos móviles */
+    padding: 15px; /* Padding reducido en dispositivos móviles */
+  }
+
+  /* Estilos para el título en dispositivos móviles */
+  h1 {
+    font-size: 28px; /* Tamaño de fuente reducido en dispositivos móviles */
+  }
+
+  /* Estilos para el formulario en dispositivos móviles */
+  label {
+    margin-bottom: 10px; /* Margen inferior reducido en dispositivos móviles */
+  }
+
+  .container input[type="text"] {
+    width: 100%; /* Ancho completo en dispositivos móviles */
+  }
+
+  /* Estilos para el botón en dispositivos móviles */
+  button {
+    padding: 10px 15px; /* Padding reducido en dispositivos móviles */
+    font-size: 16px; /* Tamaño de fuente reducido en dispositivos móviles */
+  }
+
+  /* Estilos para la tabla en dispositivos móviles */
+  table {
+    margin-top: 15px; /* Margen superior reducido en dispositivos móviles */
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Category Inspector</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- filtrar las categorias -->
+        <h1>Category Inspector</h1>
+        <label for="categorias">Ingrese categorías (separadas por espacios)</label>
+        <input type="text" id="categorias" placeholder="Categorías" />
+        <button onclick="mostrarResultado()">Filtrar</button>
+        <table id="resultadoTable" border="1">
+            <thead>
+                <tr class="first-row">
+                    <th>CATEGORIA</th>
+                    <th>CANTIDAD</th>
+                    <th>LIMPIA</th>
+                    <th>SUCIA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas se agregarán dinámicamente aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
