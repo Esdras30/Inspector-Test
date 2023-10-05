@@ -105,7 +105,7 @@ tr:nth-child(even) {
 
 
 /* Media query para dispositivos móviles */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 540px) {
   /* Estilos para el contenedor principal en dispositivos móviles */
   body {
     align-items: flex-start; /* Cambia la alineación vertical a flex-start */
