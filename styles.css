@@ -10,12 +10,13 @@ body{
 
 }
 .container {
-  max-width: 600px;
-  margin: 25px auto;
-  padding: 20px 30px 35px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding: 20px;
   background-color: #f7f7f7;
   border-radius: 10px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 -10px rgba(0, 0, 0, -0.4);
 }
 
 /* Estilos para el título */
@@ -104,41 +105,22 @@ tr:nth-child(even) {
 }
 
 
-/* Media query para dispositivos móviles */
-@media screen and (min-width: 540px) {
-  /* Estilos para el contenedor principal en dispositivos móviles */
+
+/* Estilos para dispositivos móviles (ancho máximo de 767px) */
+@media screen and (max-width: 767px) {
   body {
-    align-items: flex-start; /* Cambia la alineación vertical a flex-start */
+    font-size: 16px; /* Ajuste de tamaño de fuente para dispositivos móviles */
   }
-
   .container {
-    max-width: 100%; /* Ancho máximo del contenedor en dispositivos móviles */
-    margin: 15px; /* Margen reducido en dispositivos móviles */
-    padding: 15px; /* Padding reducido en dispositivos móviles */
+    padding: 10px; /* Ajuste de espaciado para dispositivos móviles */
   }
-
-  /* Estilos para el título en dispositivos móviles */
-  h1 {
-    font-size: 28px; /* Tamaño de fuente reducido en dispositivos móviles */
-  }
-
-  /* Estilos para el formulario en dispositivos móviles */
-  label {
-    margin-bottom: 10px; /* Margen inferior reducido en dispositivos móviles */
-  }
-
-  .container input[type="text"] {
-    width: 100%; /* Ancho completo en dispositivos móviles */
-  }
-
-  /* Estilos para el botón en dispositivos móviles */
-  button {
-    padding: 10px 15px; /* Padding reducido en dispositivos móviles */
-    font-size: 16px; /* Tamaño de fuente reducido en dispositivos móviles */
-  }
-
-  /* Estilos para la tabla en dispositivos móviles */
-  table {
-    margin-top: 15px; /* Margen superior reducido en dispositivos móviles */
-  }
+  
 }
+
+/* Estilos para tabletas (ancho entre 768px y 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Estilos específicos para tabletas */
+}
+
+
+
